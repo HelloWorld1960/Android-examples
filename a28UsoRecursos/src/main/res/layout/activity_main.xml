@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Para acceder a estos recursos es necesario hacerlo por codigo(XML o Java) -->
+
+    <!--Accediendo a recursos por XML
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:src="@android:drawable/ic_menu_edit" />
+    -->
+
+    <!--Accediendo a recursos por XML
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:text="@android:string/cancel" />
+    -->
+
+    <!--Accediendo a recursos por Java-->
+    <ImageView
+        android:id="@+id/img_edicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
+
+    <!--Accediendo a recursos por Java-->
+    <TextView
+        android:id="@+id/txtCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/img_edicion"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp" />
+
+
+</RelativeLayout>

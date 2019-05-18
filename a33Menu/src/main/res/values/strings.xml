@@ -1,0 +1,16 @@
+<!--
+    Este archivo sirve para asignar un texto a los elementos de la plicacion.
+    -->
+<resources>
+    <string name="app_name">A33Menu</string>
+
+    <string name="txt_title">Rocas</string>
+
+    <string name="inicio">!Jugar¡</string>
+
+    <string name="config">Configuracion</string>
+
+    <string name="salir">Salir</string>
+
+    <string name="d_adicional">Informacion</string>
+</resources>

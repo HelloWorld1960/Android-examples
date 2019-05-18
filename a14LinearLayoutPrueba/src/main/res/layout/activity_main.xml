@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity" >
+    <!-- android:weightSum="4" > Esta propiedad controla el peso globalmente.-->
+
+    <!--Gravity:
+    Indica donde donde se alinearan los elementos, desde el centro, derecha o izquierda.-->
+
+    <!--Es un widget que crea un espacio -->
+    <!--<android.support.v4.widget.Space
+        android:layout_width="80dp"
+        android:layout_height="0dp" /> -->
+
+    <!--wrap_content(adaptate al contenido)
+        Con 0dp le decimos que no se adapte al contenido, pero tenemos que especificar el peso de cada vista
+        dentro del layout.
+        layout_weight="" especifica el peso, en este caso 4 es el 100% y en cada elemento tenemos que
+        distribuir este numero.-->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Este es el texto del boton 1"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Este es el boton 2"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_weight="1"/>
+</LinearLayout>

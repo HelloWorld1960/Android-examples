@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A30Activity </string>
+
+    <string name="txt_title">Stones</string>
+
+    <string name="inicio">!Play¡</string>
+
+    <string name="config">Configuration</string>
+
+    <string name="salir">Exit</string>
+
+    <string name="d_adicional">Info</string>
+</resources>

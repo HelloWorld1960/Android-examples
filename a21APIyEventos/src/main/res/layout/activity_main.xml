@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--En el archivo AndroidManifest.xml establecemos la propiedad android:screenOrientation="portrait"
+    para establecer la vista "portrait"(vertical).
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Contador"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="0"
+            android:textSize="56dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnIncrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/btnReset"
+            android:layout_centerHorizontal="true"
+            android:onClick="incrementarContador"
+            android:text="+"
+            android:textSize="70dp" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/btnDecrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btnReset"
+            android:layout_centerHorizontal="true"
+            android:onClick="decrementarContador"
+            android:text="-"
+            android:textSize="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="resetContador"
+            android:text="Reset"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/nReset"
+            android:layout_width="72sp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="0"
+            android:inputType="numberSigned"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/negativos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permitir negativos"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
